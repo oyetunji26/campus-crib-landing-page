@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+
+.section-x {
+  @apply px-5 md:px-14
+}
+
+.section-y {
+  @apply py-4 md:py-7
+}
+
+.flex-between {
+  @apply flex items-center justify-between
+}
+
+.flex-center {
+  @apply flex items-center justify-center
+}
+
+.flex-around {
+  @apply flex items-center justify-around
+}
+
+.flex-col {
+  @apply flex flex-col
+}
+
+.section-tag-color {
+  @apply text-[#1B85A6]
+}
+
+.section-tag-ellipse {
+  @apply bg-[#1B85A6] w-fit rounded-full p-1.5
+}
+
+.text-dark {
+  @apply text-[#0E0F1D]
+}
+
+.text-grey {
+  @apply text-[#242A32]
+}
+
+.text-grey-900 {
+  @apply text-[#454545]
+}
+
+.text-primary {
+  @apply text-[#A64E1B]
+}
+
+.btn {
+  @apply py-2.5 px-6 rounded-xl shadow-2xs w-fit
+}
+
+.bg-primary {
+  @apply bg-[#A64E1B] text-white
+}
+
+
+/* navbar onScroll */
+.scrolled {
+  @apply fixed w-full shadow top-0 z-[1000]
+}
