@@ -60,5 +60,5 @@
 
 /* navbar onScroll */
 .scrolled {
-  @apply fixed w-full shadow top-0 z-[1000]
+  @apply fixed mx-auto min-w-full shadow top-0 z-[1000]
 }

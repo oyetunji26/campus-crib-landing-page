@@ -19,9 +19,13 @@ const Hero = () => {
           bookings effortlessly.
         </div>
 
-        <button className="btn bg-primary font-semibold text-sm">
+        <a
+          href={process.env.NEXT_PUBLIC_WEB_APP_LINK}
+          rel="noopener noreferrer"
+          className="btn bg-primary btn mt-2.5 text-white text-sm font-bold"
+        >
           Get Started
-        </button>
+        </a>
       </div>
 
       <div
@@ -30,7 +34,7 @@ const Hero = () => {
           backgroundImage: "url('/hero-bg.png')",
           backgroundSize: "contain",
           backgroundPosition: "center",
-          backgroundRepeat: "no-repeat"
+          backgroundRepeat: "no-repeat",
         }}
       >
         <Image

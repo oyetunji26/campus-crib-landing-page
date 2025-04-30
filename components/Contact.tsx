@@ -27,10 +27,7 @@ const Contact = () => {
   ];
   return (
     <div id="contact-us" className="section-y my-10 mx-auto">
-      <div
-        className=" grid grid-cols-1 md:grid-cols-2 items-center gap-5 pt-20"
-        
-      >
+      <div className=" grid grid-cols-1 md:grid-cols-2 items-center gap-5 pt-20">
         <div className="flex-col gap-3 col-span-1">
           <SectionTag title="contact us" />
 
@@ -87,9 +84,16 @@ const Contact = () => {
               student housing stress-free, whether you`re searching for
               accommodation or looking to fill your spaces.
             </p>
-            <button className="bg-primary btn mt-2.5 text-white text-sm font-bold">
+            {/* <button className="bg-primary btn mt-2.5 text-white text-sm font-bold">
               Get Started Now !
-            </button>
+            </button> */}
+            <a
+              href={process.env.NEXT_PUBLIC_WEB_APP_LINK}
+              rel="noopener noreferrer"
+              className="btn bg-primary btn mt-2.5 text-white text-sm font-bold"
+            >
+              Get Started Now !
+            </a>
           </div>
 
           <Image
