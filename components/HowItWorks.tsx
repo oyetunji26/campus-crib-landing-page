@@ -38,6 +38,24 @@ const HowItWorks = () => {
     },
   ];
 
+  const agentHowToSteps: DataItem[] = [
+    {
+      title: "List Your Hostel",
+      content: "Sign up and showcase your hostel to thousands of students.",
+      image: "home.svg",
+    },
+    {
+      title: "Receive Bookings",
+      content: "Students can find and book your hostel directly through the platform.",
+      image: "appointment.svg",
+    },
+    {
+      title: "Earn & Withdraw Payments",
+      content: "Track payments and withdraw earnings securely anytime.",
+      image: "wallet-add.svg",
+    },
+  ];
+
   const [activeTab, setActiveTab] = useState<number>(0);
   return (
     <div className="section-y pb-10 pt-20 flex flex-col gap-6 md:gap-12" id="how-it-works">
@@ -77,7 +95,8 @@ const HowItWorks = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-        {howToSteps?.map((item: any, i: number) => (
+        {activeTab == 0 ? 
+        howToSteps?.map((item: any, i: number) => (
           <div key={i} className="flex flex-col gap-1.5">
             <div className="md:flex-center">
               <div
@@ -98,6 +117,33 @@ const HowItWorks = () => {
                 />
               </div>
               <hr className={`${i < 2 ? 'text-[#454545]' : 'text-white'} grow max-md:hidden`} />
+            </div>
+
+            <h3 className="text-dark font-semibold ">{item?.title}</h3>
+
+            <p className="text-[#454545] text-sm">{item?.content}</p>
+          </div>
+        )) : agentHowToSteps?.map((item: any, i: number) => (
+          <div key={i} className="flex flex-col gap-1.5">
+            <div className="md:flex-center">
+              <div
+                className={`w-fit rounded-xl p-2.5 ${
+                  i == 0
+                    ? "bg-[#1BA68C]"
+                    : i == 1
+                    ? "bg-[#1B85A6]"
+                    : "bg-[#5B1BA6]"
+                }`}
+              >
+                <Image
+                  src={`/${item?.image}`}
+                  alt={item?.title}
+                  width={100}
+                  height={100}
+                  className=" size-5 md:size-6"
+                />
+              </div>
+              <hr className={`${i < 2 ? 'text-[#454545] text-sm' : 'text-white'} grow max-md:hidden`} />
             </div>
 
             <h3 className="text-dark font-semibold ">{item?.title}</h3>
