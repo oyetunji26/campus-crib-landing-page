@@ -13,10 +13,10 @@ type DataItem = {
 const HowItWorks = () => {
   const tabs: { title: string }[] = [
     {
-      title: "students",
+      title: "Students",
     },
     {
-      title: "agents",
+      title: "Agents",
     },
   ];
 
