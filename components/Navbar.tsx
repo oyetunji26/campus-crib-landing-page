@@ -44,8 +44,16 @@ const Navbar = () => {
     >
       {/* Logo */}
       <div className="flex gap-2 items-center">
-        <div className="bg-[#A64E1B] size-10 rounded-xl" />
-        <h3 className="text-base md:text-lg font-medium">Campus Crib</h3>
+        {/* <div className="bg-[#A64E1B] size-10 rounded-xl" /> */}
+        {/* <img src={"/logo.png"} className="h-20" /> */}
+        <Image
+          src="/logo2.png"
+          width={100}
+          height={100}
+          alt="Logo"
+          className=" object-contain"
+        />
+        {/* <h3 className="text-base md:text-lg font-medium">Campus Crib</h3> */}
       </div>
 
       {/* Desktop Menu */}

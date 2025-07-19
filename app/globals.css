@@ -1,64 +1,83 @@
 @import "tailwindcss";
 
+/* .ripple::after {
+  content: "";
+  position: absolute;
+  border-radius: 9999px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: scale(0);
+  opacity: 0.75;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.ripple:active::after {
+  transform: scale(2);
+  opacity: 0;
+  transition: transform 0.4s, opacity 0.4s;
+} */
 
 .section-x {
-  @apply px-5 md:px-14
+  @apply px-5 md:px-14;
 }
 
 .section-y {
-  @apply py-4 md:py-7
+  @apply py-4 md:py-7;
 }
 
 .flex-between {
-  @apply flex items-center justify-between
+  @apply flex items-center justify-between;
 }
 
 .flex-center {
-  @apply flex items-center justify-center
+  @apply flex items-center justify-center;
 }
 
 .flex-around {
-  @apply flex items-center justify-around
+  @apply flex items-center justify-around;
 }
 
 .flex-col {
-  @apply flex flex-col
+  @apply flex flex-col;
 }
 
 .section-tag-color {
-  @apply text-[#1B85A6]
+  @apply text-[#1B85A6];
 }
 
 .section-tag-ellipse {
-  @apply bg-[#1B85A6] w-fit rounded-full p-1.5
+  @apply bg-[#1B85A6] w-fit rounded-full p-1.5;
 }
 
 .text-dark {
-  @apply text-[#0E0F1D]
+  @apply text-[#0E0F1D];
 }
 
 .text-grey {
-  @apply text-[#242A32]
+  @apply text-[#242A32];
 }
 
 .text-grey-900 {
-  @apply text-[#454545]
+  @apply text-[#454545];
 }
 
 .text-primary {
-  @apply text-[#A64E1B]
+  @apply text-[#A64E1B];
 }
 
 .btn {
-  @apply py-2.5 px-6 rounded-xl shadow-2xs w-fit
+  @apply py-2.5 px-6 rounded-xl shadow-2xs w-fit;
 }
 
 .bg-primary {
-  @apply bg-[#A64E1B] text-white
+  @apply bg-[#A64E1B] text-white;
 }
-
 
 /* navbar onScroll */
 .scrolled {
-  @apply fixed mx-auto min-w-full shadow top-0 z-[1000]
+  @apply fixed mx-auto min-w-full shadow top-0 z-[1000] py-0;
 }
